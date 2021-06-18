@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 2px solid rgb(40, 61, 78);
+    border-radius: 4px;
+    box-shadow: 0 0 0 1pt rgb(40, 61, 78);
+}
+
+header {
+    background-color: rgb(40, 61, 78);
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+  }
+
+  button[type=submit] {
+    width: 100%;
+    background-color: #46a5a8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .zip {
+      display: flex;
+      width: 50%;
+      float: left;
+      margin-bottom: 10%;
+  }
+
+  .section_2 {
+      padding: 10px 15px 15px 15px;
+      background-color: rgb(202, 225, 243);
+  }
+
+  .newsletter {
+      text-align: center;
+      padding: 20px 0 10px 0;
+  }
+
+  legend {
+      text-align: left;
+      padding: 5px 0 15px 0;
+      font-size: 25px;
+      font-weight: bold;
+  }
+
+  .top_paragraph {
+      text-align: center;
+  }
+
+  .horizontal_line_1 {
+      height: 4px;
+      width: 95%;
+      border-top: 3px solid black;
+      border-bottom: 1px solid black;
+      margin: 1em auto;
+      color: black;
+  }
+
+  .horizontal_line_2 {
+      border-top: 2px solid black;
+      width: 95%;
+      margin: 1em auto;
+  }
+
+  .copy {
+      text-align: center;
+      padding-top: 15px;
+  }
+
+  .newsletter_format {
+      padding:10px;
+  }
+
+  .subscriptions {
+      padding: 10px;
+  }
+
+  .subscriptions input {
+      float: left;
+      padding-bottom: 10px;
+      margin: 10px 0 0 0;
+  }
+
+  .subscriptions label {
+      display: inline-block;
+      padding: 8px 0 5px 8px;
+  }
+
+  .newsletter_format input {
+      float: left;
+      display: inline-block;
+      padding-top: 5px;
+      margin-top: 10px;
+  }
+
+  .newsletter_format label {
+      display: inline-block;
+      padding: 10px 0 0 10px;
+  }
+
+  .subscriptions[href$="_news"] {
+      margin-top: 10px;
+  }
+
+  textarea {
+      width: 100%;
+      height: 50px;
+      padding-top: 10px;
+      background-color: rgb(238, 238, 238);
+      border-color: rgb(238, 238, 238);
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  button {
+      font-size: large;
+  }
+
+  input {
+      text-align: right;
+  }
+
+  input:focus {
+      text-align: left;
+      border-radius: 4px;
+      display: inline-block;
+      transition-delay: .05s;
+  }
+  p {
+      color: rgb(148, 148, 148);
+  }
+
+  label {
+      color: rgb(148, 148, 148);
+  }
+
+  input::placeholder {
+      font-style: italic;
+  }
+
+  select {
+      color: rgb(148, 148, 148);
+  }
+  .copy {
+      margin-bottom: 40%;
+  }
+  fieldset {
+      border: none;
+  }
+  .contact_form {
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: column;
+      max-width: 100%;
+  }
+  .flex_pair {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      width: 100%;
+  }
+  .flex_pair label {
+      text-align: left;
+  }
+  .zip_ {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      width: 50%;
+    }
+
+
+
+  @media screen and (min-width: 768px) {
+      .container {
+          margin: 0 20% 0 20%;
+      }
+      .contact_form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+      }
+      .contact_form, .flex_pair {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+      }
+      .flex_pair {
+          flex: 1 75%
+      }
+      .flex_pair label {
+          font-size: 14px;
+          flex-basis: 25%;
+          align-self: center;
+          padding: 0;
+      }
+      .flex_pair input,
+      .flex_pair select {
+          flex-basis: 75%;
+      }
+      .contact_form, .zip_ {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .zip_ {
+          flex: 1 75%;
+      }
+      .zip_ input {
+          flex-basis: 15%;
+      }
+      .zip_ label {
+          font-size: 14px;
+          flex-basis: 25%;
+          align-self: center;
+          padding: 0;
+      }
+      #zip {
+          max-width: 25%;
+      }
+      label {
+          color: black;
+      }
+      p {
+          color: black;
+      }
+      .text_area_1 {
+          padding: 10px 0 0 0;
+      }
+
+    }
