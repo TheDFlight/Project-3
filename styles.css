@@ -18,9 +18,28 @@ header h1 {
     text-align: center;
     padding: 15px;
     margin: 0px;
+    font-family: 'Merriweather', serif;
 }
 
 input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+  }
+  input[type=email], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+  }
+  input[type=tel], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -56,6 +75,8 @@ input[type=text], select {
   .newsletter {
       text-align: center;
       padding: 20px 0 10px 0;
+      font-family: 'Merriweather', serif;
+      font-size: 22px;
   }
 
   legend {
@@ -63,6 +84,7 @@ input[type=text], select {
       padding: 5px 0 15px 0;
       font-size: 25px;
       font-weight: bold;
+      font-family: 'Merriweather', serif;
   }
 
   .top_paragraph {
@@ -110,7 +132,6 @@ input[type=text], select {
 
   .newsletter_format input {
       float: left;
-      display: inline-block;
       padding-top: 5px;
       margin-top: 10px;
   }
@@ -136,20 +157,25 @@ input[type=text], select {
 
   button {
       font-size: large;
+      font-family: 'Merriweather', serif;
   }
 
   input {
       text-align: right;
+      outline: none;
   }
 
   input:focus {
       text-align: left;
       border-radius: 4px;
       display: inline-block;
-      transition-delay: .05s;
+      transition: .75s;
   }
   p {
       color: rgb(148, 148, 148);
+      font-family: 'Merriweather', serif;
+      font-size: 12px;
+      padding-bottom: 5px;
   }
 
   label {
@@ -177,7 +203,6 @@ input[type=text], select {
   }
   .flex_pair {
       display: flex;
-      align-items: left;
       flex-direction: column;
       width: 100%;
   }
@@ -186,10 +211,14 @@ input[type=text], select {
   }
   .zip_ {
       display: flex;
-      align-items: left;
       flex-direction: column;
       width: 50%;
     }
+    input:focus::placeholder {
+        color: transparent;
+      }
+
+    
 
 
 
